@@ -1,0 +1,60 @@
+{
+  "name": "cinhtau.net",
+  "version": "1.0.0",
+  "description": "My awesome site",
+  "main": "gulpfile.js",
+  "bin": {
+    "cinhtau.net": "build-index.js"
+  },
+  "dependencies": {
+    "gulp": "~3.9.1",
+    "gulp-load-plugins": "~1.5.0",
+    "lunr": "^2.0.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "child_process": "~1.0.2",
+    "del": "~2.2.2",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~3.0.1",
+    "gulp-clean": "~0.3.2",
+    "gulp-clean-css": "~3.4.0",
+    "gulp-concat": "~2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "~2.0.4",
+    "gulp-load-plugins": "~1.5.0",
+    "gulp-minify": "^1.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-rsync": "~0.0.8",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-run": "^1.7.1",
+    "gulp-run-sequence": "~0.3.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "~3.0.8",
+    "imagemin": "^5.3.1",
+    "jshint": "~2.9.4",
+    "lodash.iteratee": "~4.7.0",
+    "pump": "^2.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/cinhtau/cinhtau.net.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Tan-Vinh Nguyen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://gitlab.com/cinhtau/cinhtau.net/issues"
+  },
+  "homepage": "https://gitlab.com/cinhtau/cinhtau.net#README"
+}
