@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t cinhtau/codebuild-jekyll .
+
+script:
+  - docker images cinhtau/codebuild-jekyll
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push cinhtau/codebuild-jekyll;
+    fi
