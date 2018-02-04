@@ -1,3 +1,5 @@
+![Build](https://travis-ci.org/cinhtau/codebuild-jekyll.svg?branch=master)
+
 This is a customized Docker container for AWS Code Build.
 
 You can find the official images of AWS in https://github.com/aws/aws-codebuild-docker-images.
@@ -21,11 +23,26 @@ I choose to use the official Ruby image based on Debian Stretch.
 - Node.js is v8.
 - Python v2.7
 
-## Docker build
+## Docker 
 
-Manual build
+This section describes the Docker build and deployment options.
+
+### Manual build
 
 ```bash
 docker build -t cinhtau/codebuild-jekyll .
 ```
 
+### Deployment
+
+To push the image to dockerhub manually login with respective credentials. Just an example below (not real data) :smile: !
+
+```bash
+docker login -p="I_am_Legend" -u="cinhtau"
+```
+
+Push to dockerhub
+
+```bash
+docker push cinhtau/codebuild-jekyll
+```
