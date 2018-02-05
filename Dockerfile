@@ -26,9 +26,6 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 WORKDIR build
 
-# NPM packages taken from Jekyll Gulp project
-RUN npm install -g gulp
-
 # Ruby Gems needed by Jekyll
 COPY Gemfile .
 RUN bundle install
@@ -38,3 +35,6 @@ RUN wget "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
     && python /tmp/get-pip.py \
     && pip install awscli==1.11.157 \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+COPY package.json .
+RUN npm install -g gulp && npm install
