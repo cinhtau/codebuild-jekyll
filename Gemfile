@@ -11,6 +11,5 @@ group :jekyll_plugins do
   gem "jekyll-email-protect"
   gem "jekyll-archives"
   gem 'jekyll-algolia', '~> 1.0'
+  gem 'jekyll-gist'
 end
-
-
