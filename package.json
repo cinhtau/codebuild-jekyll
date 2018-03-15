@@ -17,7 +17,7 @@
     "browser-sync": "^2.23.6",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-accessibility": "^3.0.1",
+    "gulp-accessibility": "^3.1.1",
     "gulp-append-prepend": "^1.0.3",
     "gulp-babel": "^7.0.1",
     "gulp-cache": "^0.4.6",
@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.1.0",
     "gulp-run": "^1.7.1",
+    "gulp-s3-upload": "^1.7.0",
     "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.5.2",
     "gulp-uglify": "^2.0.0",
@@ -42,7 +43,7 @@
     "qs": "^6.5.1",
     "query-string": "^5.0.0",
     "run-sequence": "^1.2.2",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "start": "gulp",
